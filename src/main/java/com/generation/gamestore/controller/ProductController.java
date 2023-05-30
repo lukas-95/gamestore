@@ -26,6 +26,7 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<List<Product>> getAll(){
+
         return ResponseEntity.ok(productRepository.findAll());
     }
 
